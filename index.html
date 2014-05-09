@@ -1,0 +1,69 @@
+<html>
+<head>
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="wirecal.js"></script>
+</head>
+<body onload="init()">
+<input type="button" value="QUIT" onclick="quitapp()"/>
+<h4>Estimation of Slings (2-Legged) of Eccentricity Load</h4>
+<table>
+<tr>
+	<td><img src="layout.jpg" width="300px"></td>
+</tr>
+<tr>
+	<td>
+	<hr>
+		<table>
+		<tr>
+			<td>Fixed Wire Length (W) :</td>
+			<td><input id="w" type="number" style="width:80px;"></td>
+			<td>mm</td>
+		</tr>
+		<tr>
+			<td>Hori Distane from edge of Fixed side (a) :</td>
+			<td><input id="a" type="number" style="width:80px;"></td>
+			<td>mm</td>
+		</tr>
+		<tr>
+			<td>Total length of the Load (L) :</td>
+			<td><input id="l" type="number" style="width:80px;"></td>
+			<td>mm</td>
+		</tr>
+		<tr>
+			<td>Total weight of the Load (Wg) :</td>
+			<td><input id="g" type="number" style="width:80px;"></td>
+			<td>Ton</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td>
+	<hr>
+		<table>
+		<tr>
+			<td rowspan="2" style="border-right: 2px solid #AAAAAA; width:80px;" align="center">
+			<input type="button" value="Check" style="width:50px; height:50px;" id="cal" />
+			</td>
+			<td>
+			Loading of Fixed sling:
+			</td>
+			<td>
+			<input type="text" style="width:80px;" id="fixreading" disabled />Ton(s)
+			</td>
+		</tr>
+		<tr>
+			<td>
+			Loading of Another sling:
+			</td>
+			<td>
+			<input type="text" style="width:80px;" id="otherreading" disabled />Ton(s)
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>
